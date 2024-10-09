@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto-Condensed", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(77, 135, 136);
+}
+
+.bmi-calculator {
+  width: 800px;
+  height: 500px;
+  padding: 20px;
+  background-color: rgb(254, 254, 254);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgb(46, 46, 48);
+  display: flex;
+}
+
+.box {
+  width: 350px;
+  background-image: url("assets/diet-plan.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.data {
+  flex: 1;
+  padding: 15px;
+}
+
+h1 {
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding: 10px 0px;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: rgb(95, 195, 147);
+}
+
+.input-container {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #888;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(138, 137, 134);
+  margin-bottom: 10px;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+button {
+  background-color: rgb(128, 222, 177);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.data button:nth-of-type(2) {
+  background-color: rgb(218, 31, 31);
+  margin-left: 10px;
+}
+
+.data button:nth-of-type(2):hover {
+  background-color: rgb(148, 34, 34);
+}
+
+button:hover {
+  background-color: rgb(74, 156, 129);
+}
+
+.result {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid rgb(74, 156, 129);
+  border-radius: 4px;
+}
+
+.result p {
+  margin: 10px 0;
+  color: #555;
+}
+
+.result p:first-child {
+  color: rgb(74, 156, 129);
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
